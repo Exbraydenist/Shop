@@ -86,8 +86,8 @@ public class Basket {
 
     public void add(String name, int price, int count, double weight) {
         add(name, price, count);
-        itemsWeight += (weight * count);
-        increaseTotalItemsWeight(weight);
+        itemsWeight += weight * count;
+        increaseTotalItemsWeight(weight * count);
         items = items + " " + weight + " г.";
     }
 
